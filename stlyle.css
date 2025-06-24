@@ -1,37 +1,108 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #1c1c1c;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  background: #0f1b2b;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
   margin: 0;
+  padding: 0;
 }
 
 .container {
-  background: #2a2a2a;
+  max-width: 800px;
+  margin: auto;
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #00ff88;
+}
+
+h1 {
   text-align: center;
+  color: #00bfff;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.output {
+  background: #142c47;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.output label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+.output input {
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  background: #0f1b2b;
+  color: lime;
+  text-align: center;
+}
+
+.settings h2 {
+  margin-top: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.length-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.length-control button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background: #00bfff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
 }
 
 button {
-  padding: 10px 20px;
-  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
   background: #00ff88;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
-input {
-  margin-top: 15px;
-  width: 100%;
-  padding: 10px;
-  font-size: 18px;
-  border: none;
+.strength-bar {
+  height: 15px;
+  background: #222;
   border-radius: 5px;
-  text-align: center;
+  margin: 5px 0;
+  overflow: hidden;
+}
+
+.strength-bar::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: lime;
+  transition: width 0.5s;
+}
+
+.strength-info {
+  font-size: 12px;
+  color: #aaa;
 }

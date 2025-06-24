@@ -1,24 +1,27 @@
-# gerado-de-senhas1# 🔐 Gerador de Senhas Seguras
+# gerado-de-senhas1# # 🔐 Gerador de Senhas Seguras
 
-Este é um site simples feito em HTML, CSS e JavaScript que gera senhas aleatórias e seguras instantaneamente.
+Um site moderno que permite gerar senhas aleatórias e seguras com opções de personalização.
 
-## ✅ Funcionalidades
+## ✨ Recursos
 
-- Geração instantânea de senhas seguras
-- Senhas com letras, números e símbolos
-- Design responsivo e moderno
+- Geração instantânea de senha
+- Controle de número de caracteres
+- Inclusão de letras maiúsculas, minúsculas, números e símbolos
+- Barra de força da senha
+- Estimativa de tempo para quebra da senha
 
 ## 🚀 Como usar
 
-1. Clique no botão "Gerar Senha"
-2. Copie a senha gerada no campo de texto
+1. Abra o `index.html` no navegador.
+2. Ajuste as configurações desejadas.
+3. Clique em **Gerar senha**.
+4. Copie e use sua senha forte!
 
-## 📁 Arquivos
+## 🧾 Requisitos
 
-- `index.html` → Página principal do gerador
-- `style.css` → Estilo visual da página
-- `script.js` → Lógica de geração da senha
-- `README.md` → Este arquivo de instruções
+Nenhum. Funciona 100% no navegador, sem instalação.
 
-## 💡 Exemplo de senha gerada
+## 📄 Licença
+
+Uso livre para qualquer fim pessoal ou profissional.
 

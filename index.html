@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerador de Senhas Seguras</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gerador de Senhas</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>🔐 Gerador de Senhas Seguras</h1>
-    <button onclick="gerarSenha()">Gerar Senha</button>
-    <input type="text" id="senha" readonly>
-    <p>Clique no botão para gerar uma senha aleatória e segura.</p>
+    <h1>🔐 Gerador de senhas</h1>
+    <p class="subtitle">Gere instantaneamente uma senha aleatória e segura</p>
+
+    <div class="output">
+      <label>Senha</label>
+      <input type="text" id="output" readonly />
+    </div>
+
+    <section class="settings">
+      <h2>Personalize sua senha</h2>
+      <div class="row">
+        <div>
+          <p>Número de caracteres</p>
+          <div class="length-control">
+            <button onclick="changeLength(-1)">-</button>
+            <span id="length">15</span>
+            <button onclick="changeLength(1)">+</button>
+          </div>
+        </div>
+
+        <div>
+          <p>Características da senha</p>
+          <label><input type="checkbox" id="uppercase" checked> Letras maiúsculas</label><br>
+          <label><input type="checkbox" id="lowercase"> Letras minúsculas</label><br>
+          <label><input type="checkbox" id="numbers"> Números</label><br>
+          <label><input type="checkbox" id="symbols"> Símbolos</label>
+        </div>
+
+        <div>
+          <p>Força da senha</p>
+          <div class="strength-bar" id="strength-bar"></div>
+          <p class="strength-info" id="strength-info"></p>
+        </div>
+      </div>
+    </section>
+
+    <button onclick="generatePassword()">Gerar senha</button>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
